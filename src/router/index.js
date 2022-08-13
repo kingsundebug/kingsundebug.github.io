@@ -17,66 +17,11 @@ const routes = [
     name: 'Home',
     component: Home
   },
+  
   {
-    path: '/weibo',
-    name: 'weibo',
-    component: () => import('@/views/weibo/index.vue')
-  },
-  {
-    path: '/demo1/:code/:id',
-    name: 'demo1',
-    component: () => import('@/views/demo1/index.vue')
-  },
-  {
-    path: '/slot',
-    name: 'slot',
-    component: () => import('@/views/slot/index.vue')
-  },
-  {
-    path: '/toggleCom',
-    name: 'toggleCom',
-    component: () => import('@/views/toggleCom/index.vue')
-  },
-  {
-    path: '/transition',
-    name: 'transition',
-    component: () => import('@/views/transition/index.vue')
-  },
-  {
-    path: '/companyPerson',
-    name: 'companyPerson',
-    component: () => import('@/views/companyPerson')
-  },
-  {
-    path: '/list',
-    name: 'list',
-    component: () => import('@/views/list')
-  },
-  {
-    path: '/activity',
-    name: 'activity',
-    component: () => import('@/views/activity')
-  },
-  {
-    path: '/cropper',
-    name: 'cropper',
-    component: () => import('@/views/cropper')
-  },
-  {
-    path: '/tableComDemo',
-    name: 'tableComDemo',
-    component: () => import('@/views/tableComDemo')
-  },
-  {
-    path: '/formConfig',
-    name: 'formConfig',
-    component: () => import('@/views/formConfig')
-  },
-
-  {
-    path: '/main',
-    name: 'main',
-    component: () => import('@/views/main')
+    name: 'intro',
+    path: '/intro',
+    component: resolve => require(['@/views/intro/index.vue'], resolve)
   },
   {
     name: '404',

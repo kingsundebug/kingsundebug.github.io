@@ -1,9 +1,9 @@
 <template>
   <div class="home">
+    <h1>Hello! This is Website of Kingsun. Welcome!</h1>
     <div class="toggle-list">
       <router-link v-for="(item, index) in list" :key="item.path" class="item" :to="{path: item.path}">{{ index + 1 }} . {{ item.title }}</router-link>
     </div>
-    <el-button @click="handleC">传参</el-button>
   </div>
 </template>
 
@@ -18,17 +18,11 @@ export default {
       isShow: false,
       titleVal: true,
       list: [
-        { path: '/test', title: '测试' },
-        { path: '/slot', title: '插槽' },
-        { path: '/demo1', title: '子组件直接修改父组件的值' },
-        { path: '/weibo', title: '微博' },
-        { path: '/toggleCom', title: '点击按钮切换组件' },
-        { path: '/transition', title: '过渡动画' },
-        { path: '/list', title: '触底加载更多' },
-        { path: '/activity', title: '活动' },
-        { path: '/cropper', title: '剪切' },
-        { path: '/tableComDemo', title: 'h5表格原生,传自定义表头,字段,支持选中' },
-        { path: '/formConfig', title: '表单配置' }
+        { path: '/intro', title: '个人介绍' },
+        // { path: '/article1', title: '关于人生' },
+        // { path: '/experience', title: '关于过往' },
+        // { path: '/tomorrow', title: '关于明天' },
+        { path: '/thinks', title: '碎碎念' },
       ]
     }
   },
@@ -57,6 +51,10 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+h1 {
+  text-align: center;
+  padding: 20px;
+}
 .toggle-list {
   display: flex;
   width: 400px;
