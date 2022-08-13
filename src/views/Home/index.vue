@@ -18,11 +18,12 @@ export default {
       isShow: false,
       titleVal: true,
       list: [
-        { path: '/intro', title: '个人介绍' },
+        { path: '/intro', title: '个人空间' },
         // { path: '/article1', title: '关于人生' },
         // { path: '/experience', title: '关于过往' },
         // { path: '/tomorrow', title: '关于明天' },
-        { path: '/thinks', title: '碎碎念' },
+        { path: '/thinks', title: '随笔' },
+        { path: '/MissWu', title: '吴大镜子光荣璀璨的前半生' }
       ]
     }
   },

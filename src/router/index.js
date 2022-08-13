@@ -17,11 +17,21 @@ const routes = [
     name: 'Home',
     component: Home
   },
-  
+
   {
     name: 'intro',
     path: '/intro',
     component: resolve => require(['@/views/intro/index.vue'], resolve)
+  },
+  {
+    name: 'MissWu',
+    path: '/MissWu',
+    component: resolve => require(['@/views/MissWu/index.vue'], resolve)
+  },
+  {
+    name: 'thinks',
+    path: '/thinks',
+    component: resolve => require(['@/views/thinks/index.vue'], resolve)
   },
   {
     name: '404',
