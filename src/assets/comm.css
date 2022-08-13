@@ -1,0 +1,21 @@
+html,
+body {
+  height: 100%;
+}
+li {
+  list-style: none;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+.app-container {
+  height: 100%;
+  padding: 15px;
+}
+

@@ -1,0 +1,16 @@
+{
+  "id": "2691393",
+  "name": "play",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1953219",
+      "name": "置顶",
+      "font_class": "zhiding",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    }
+  ]
+}
